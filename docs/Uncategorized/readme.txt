@@ -1264,3 +1264,19 @@ http://kilim.ow2.org/ 一种用于实现 Java 并发性的角色框架
 http://coolshell.cn/articles/933.html
 
 互联网之子
+
+http://es6.ruanyifeng.com/
+https://github.com/kuitos/kuitos.github.io/issues/32
+http://coolshell.cn/
+http://www.ruanyifeng.com/blog/2010/03/dmca.html
+http://www.jackcallister.com/2015/01/05/the-react-quick-start-guide.html
+http://facebook.github.io/react/docs/getting-started.html
+http://reactjs.cn/react/docs/tutorial.html
+
+http://blog.csdn.net/kobejayandy/article/details/11856735
+http://www.iteye.com/topic/960532
+http://www.iteye.com/topic/959751
+http://webpack.github.io/docs/tutorials/getting-started/#development-server
+
+http://www.oreilly.com/
+https://www.behance.net/

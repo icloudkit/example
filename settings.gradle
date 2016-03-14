@@ -1,0 +1,7 @@
+rootProject.name = 'cloudkit'
+// include 'net.cloudkit.ecosystem', 'net.cloudkit.relaxation'
+include 'net.cloudkit.ecosystem'
+include 'net.cloudkit.relaxation'
+include 'net.cloudkit.flowportal'
+include 'net.cloudkit.example'
+

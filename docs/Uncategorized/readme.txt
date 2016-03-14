@@ -1280,3 +1280,8 @@ http://webpack.github.io/docs/tutorials/getting-started/#development-server
 
 http://www.oreilly.com/
 https://www.behance.net/
+
+
+Content Security Policy Level 2
+
+社交购物

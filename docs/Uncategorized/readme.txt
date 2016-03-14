@@ -1291,3 +1291,11 @@ Content Security Policy Level 2
 青春写真
 MTV
 微电影
+
+晒晒太阳,溜溜狗,散散步
+
+加菲猫
+泰迪熊
+兔斯基
+倒霉熊
+机器猫

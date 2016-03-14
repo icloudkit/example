@@ -1287,6 +1287,7 @@ Content Security Policy Level 2
 日彩
 社交购物、青春秀购物、青春代名词
 
+五彩汽球
 青春写真
 MTV
 微电影

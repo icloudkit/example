@@ -1237,7 +1237,7 @@ webpack是文件打包工具，可以把项目的各种js文、css文件等打�
 bower是包管理器，用来管理你项目里的那些外部依赖的。
 
 http://coolshell.cn/
-
+https://www.meteor.com/
 
 http://cn.redux.js.org/
 http://facebook.github.io/flux/

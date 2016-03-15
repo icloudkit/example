@@ -26,7 +26,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 //@Component, @Service, @Repository, @Controller
 @Controller
-//@RestController
+@RestController
 //@RequestMapping("/user")
 @EnableAutoConfiguration
 public class SampleController {
@@ -44,10 +44,12 @@ public class SampleController {
         return "hello 11" + name + "!";
     }
 
-    @RequestMapping("hello2")
-    public ModelAndView hellojsp(@RequestParam(defaultValue = "world") String name, Model m) {
+    // , produces = "application/json;charset=utf-8"
+    @RequestMapping(value = "/hello2")
+    @ResponseBody
+    public Model hellojsp(@RequestParam(defaultValue = "world") String name, Model m) {
         m.addAttribute("text", "hello " + name);
-        return new ModelAndView("hello");
+        return m;
     }
 
     @RequestMapping(value = "/hello3", method = RequestMethod.GET)

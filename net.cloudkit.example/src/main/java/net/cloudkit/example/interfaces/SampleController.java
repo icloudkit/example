@@ -41,7 +41,7 @@ public class SampleController {
     @Transactional(readOnly = true)
     public String helloWorld(@RequestParam(defaultValue = "world") String name) {
         // return this.cityService.getCity("Bath", "UK").getName();
-        return "hello 11" + name + "!";
+        return "hello " + name + "!";
     }
 
     // , produces = "application/json;charset=utf-8"

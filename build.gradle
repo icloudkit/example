@@ -372,7 +372,6 @@ task wrapper(type: Wrapper, description: 'Gradle Wrapper task') {
 }
 // end::wrapper[]
 
-
 task production << {
     bootRun.systemProperty 'spring.profiles.active', 'production'
 }

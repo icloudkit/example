@@ -1,4 +1,4 @@
-###### 商品 goods
+商品 goods
 
 - id
 - name                    商品名称
@@ -66,7 +66,7 @@
 
 - shared_count
 - is_gift 是否为赠品
-
+- sort_order
 
 order_type
 置顶降序top_desc
@@ -83,7 +83,6 @@ order_type
 `is_on_sale` tinyint(1) unsigned NOT NULL default '1',
 `is_alone_sale` tinyint(1) unsigned NOT NULL default '1',
 `is_shipping` tinyint(1) unsigned NOT NULL default '0',
-`sort_order` smallint(4) unsigned NOT NULL default '100',
 `is_delete` tinyint(1) unsigned NOT NULL default '0',
 `seller_note` varchar(255) NOT NULL default '',
 `give_integral` int NOT NULL default '-1',
@@ -98,11 +97,103 @@ brand 品牌
 - logo
 - url 网址
 - introduction 介绍
+- description
+- sort_order
+- is_show
 
 promotion 促销
 
-shopping cart/shopping bag
-order
+shopping cart/shopping bag 购物车
+user_id
+session_id
+goods_id
+goods_sn
+goods_name
+market_price
+goods_price
+goods_number
+goods_attr
+is_gift
+is_shipping
 
-categories
+order 定单
+order_log 定单日志
 
+category|categories 分类
+parent_id
+sort_order
+is_show
+
+goods_type
+
+tags 标签
+
+coupon 优惠券
+
+log 日志
+
+user|member 会员profile
+- avatar
+- username
+- nice_name
+- true_name
+- password
+- salt
+- sex
+- birthday
+- email
+- mobile
+- telephone
+- points
+- registered_time
+- last_login_time
+- last_login_ip
+- visited_count
+
+
+账户金额
+user_money
+frozen_money 冻结金额
+
+安全问
+question
+answer
+
+user_address 用户地址
+
+message|notification 消息
+feedback 反馈
+
+comment|review|tweet
+
+refunds 退款
+returns 退货,换货
+payment 付款
+交易记录
+
+shopping_card 购物卡
+- fee
+- discount_amount
+- description
+- thumbnail_image
+
+region|area
+article
+
+attribute
+bonus_type|rebate
+
+booking_goods
+collect_goods
+
+friend_link
+name
+url
+logo
+show_order
+
+delivery_order 发货单
+
+products
+mail_templates
+environment_setting

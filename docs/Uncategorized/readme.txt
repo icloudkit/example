@@ -1300,3 +1300,16 @@ MTV
 兔斯基
 倒霉熊
 机器猫
+
+------------------------------------------------------------------------------------------------------------------------
+/login?redirect_after_login=
+POST /sessions
+
+/signup
+/account/begin_password_reset
+/account/create
+
+https://support.example.com/articles
+/about
+/privacy
+

@@ -196,4 +196,4 @@ delivery_order 发货单
 
 products
 mail_templates
-environment_setting
+environment_settings

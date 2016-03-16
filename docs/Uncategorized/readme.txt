@@ -335,7 +335,7 @@ Saga
 Storage Store
 
 User 用户
-ReceivingAddress 收购地址
+ReceivingAddress 收货地址
 Account 账户 balance 余额 password 支付密码
 Warehouse 仓库
 Returns 退换商品

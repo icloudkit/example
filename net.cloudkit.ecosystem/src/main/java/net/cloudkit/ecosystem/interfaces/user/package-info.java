@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 The CloudKit Open Source Project
+ * Copyright (C) 2016. The CloudKit Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,4 +20,4 @@
  * @author hongquanli <hongquanli@qq.com>
  * @version 1.0 2015年08月26日 上午11:38:34
  */
-package net.cloudkit.ecosystem.domain.support;
+package net.cloudkit.ecosystem.interfaces.user;

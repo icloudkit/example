@@ -16,66 +16,66 @@ public class User extends AbstractEntity {
 
     private static final long serialVersionUID = 1L;
 
-    /** ÓÃ»§Ãû */
+    /** ç”¨æˆ·å */
     @Basic
     @Column(name = "USERNAME")
     private String username;
 
-    /** ÒÆ¶¯µç»° */
+    /** ç§»åŠ¨ç”µè¯ */
     @Basic
     @Column(name = "MOBILE")
     private String mobile;
 
-    /** ÓÊÏä */
+    /** é‚®ç®± */
     @Basic
     @Column(name = "EMAIL")
     private String email;
 
-    /** ÃÜÂë */
+    /** å¯†ç  */
     @Basic
     @Column(name = "PASSWORD")
     private String password;
 
-    /** ÑÎÖµ */
+    /** ç›å€¼ */
     @Basic
     @Column(name = "SALT")
     private String salt;
 
-    /** êÇ³Æ */
+    /** æ˜µç§° */
     @Basic
     @Column(name = "NICKNAME")
     private String nickname;
 
-    /* ÕæÊµĞÕÃû realName */
+    /* çœŸå®å§“å realName */
     @Basic
     @Column(name = "TRUE_NAME")
     private String trueName;
 
-    /** ĞÔ±ğ */
+    /** æ€§åˆ« */
     @Basic
     @Column(name = "GENDER")
     private Integer gender;
 
-    /** ³öÉú£¨Äê/ÔÂ/ÈÕ£© */
+    /** å‡ºç”Ÿï¼ˆå¹´/æœˆ/æ—¥ï¼‰ */
     @Basic
     @Column(name = "BIRTHDAY")
     private Date birthday;
 
-    /* ¹Ì¶¨µç»° */
+    /* å›ºå®šç”µè¯ */
     @Basic
     @Column(name = "TELEPHONE")
     private String telephone;
 
-    /** ¼ò½é */
+    /** ç®€ä»‹ */
     @Basic
     @Column(name = "INTRODUCTION")
     private String introduction;
 
-    /** µØÖ· */
+    /** åœ°å€ */
     @Embedded
     private Address homeAddress;
 
-    /** ÓÃ»§×´Ì¬ EnumType.ORDINAL Ë÷Òı | EnumType.STRING ×Ö·û´® */
+    /** ç”¨æˆ·çŠ¶æ€ EnumType.ORDINAL ç´¢å¼• | EnumType.STRING å­—ç¬¦ä¸² */
     @Enumerated(EnumType.ORDINAL)
     @Column(name = "USER_STATUS")
     private UserStatus userStatus;

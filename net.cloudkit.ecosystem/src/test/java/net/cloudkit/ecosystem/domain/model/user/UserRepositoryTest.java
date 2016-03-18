@@ -87,7 +87,7 @@ public class UserRepositoryTest {
     }
 
     @Test
-    public void testFindById() throws Exception {
-        userRepository.findAll();
+    public void testFindrrfById() throws Exception {
+        userRepository.findById(1L);
     }
 }

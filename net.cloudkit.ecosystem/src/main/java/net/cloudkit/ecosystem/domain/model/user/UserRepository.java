@@ -16,8 +16,10 @@
 package net.cloudkit.ecosystem.domain.model.user;
 
 import org.springframework.data.jpa.repository.*;
+import org.springframework.data.repository.NoRepositoryBean;
 
 import javax.persistence.LockModeType;
+import java.io.Serializable;
 import java.util.List;
 //import org.springframework.data.repository.RepositoryDefinition;
 
@@ -27,8 +29,9 @@ import java.util.List;
  * @author hongquanli <hongquanli@qq.com>
  * @version 1.0 2013年10月30日 上午11:54:23
  */
-// @RepositoryDefinition(domainClass = User.class, idClass = Long.class) 
-// public interface UserRepository extends Repository<User, Long> { 
+// @NoRepositoryBean
+// @RepositoryDefinition(domainClass = User.class, idClass = Long.class)
+// public interface UserRepository extends Repository<User, Long> {
 // extends JpaRepository<User, Long> {
 // extends CrudRepository<User, Long>
 // CGLIB代理不允许 @Transactional
@@ -122,3 +125,8 @@ public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificat
     void store(User user);*/
 
 }
+
+
+//public interface MyRepository<T, ID extends Serializable> extends JpaRepository<T, ID> {
+//
+//}

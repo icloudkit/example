@@ -63,6 +63,7 @@ dependencies {
 
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
 
+    /*
     compile(
         // <%=request.getContextPath() %>/webjars/jquery/1.9.0/jquery.min.js
         'org.webjars:bootstrap:4.0.0-alpha.2',
@@ -74,6 +75,7 @@ dependencies {
         'org.webjars:highcharts:4.2.0',
         'org.webjars:zeptojs:1.1.6'
     )
+    */
 
     // Core
     //compile('org.springframework.boot:spring-boot-starter-security')

@@ -23,6 +23,14 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/java/net/cloudkit/ecosystem/application/CloudKitEcosystemApplication.java</file>
+          <file>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ratpack/ratpack-spring-boot/1.1.1/1f3465e29e6cb48c7a399d225c5ef0278a50f859/ratpack-spring-boot-1.1.1.jar!/ratpack/spring/config/RatpackConfiguration.class</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/build/classes/main" />

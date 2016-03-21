@@ -2,23 +2,21 @@ package net.cloudkit.ecosystem.application;
 
 import net.cloudkit.ecosystem.domain.model.user.UserRepository;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.orm.jpa.EntityScan;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import java.util.Arrays;
-
-@Configuration
 @EntityScan("net.cloudkit.ecosystem.domain.model")
-@ComponentScan(basePackages = "net.cloudkit.ecosystem")
-@EnableAutoConfiguration
 @EnableJpaRepositories(basePackages = "net.cloudkit.ecosystem.domain")
 @EnableTransactionManagement
+
+// @Configuration
+// @EnableAutoConfiguration
+// @ComponentScan(basePackages = "net.cloudkit.ecosystem")
+
+// @SpringBootApplication same as @Configuration @EnableAutoConfiguration @ComponentScan
 @SpringBootApplication
 public class CloudKitEcosystemApplication {
 

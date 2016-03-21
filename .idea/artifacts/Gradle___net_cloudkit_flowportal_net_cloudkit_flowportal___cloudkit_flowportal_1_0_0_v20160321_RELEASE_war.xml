@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="Gradle : net.cloudkit.flowportal:net.cloudkit.flowportal : cloudkit-flowportal-1.0.0-v20160317-RELEASE.war">
+  <artifact type="war" name="Gradle : net.cloudkit.flowportal:net.cloudkit.flowportal : cloudkit-flowportal-1.0.0-v20160321-RELEASE.war">
     <output-path>$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal</output-path>
     <properties id="gradle-properties">
-      <options external-project-path="$PROJECT_DIR$/net.cloudkit.flowportal" />
+      <options external-project-path="$PROJECT_DIR$" />
     </properties>
-    <root id="archive" name="cloudkit-flowportal-1.0.0-v20160317-RELEASE.war">
-      <element id="javaee-facet-resources" facet="net.cloudkit.flowportal/web/Web Gradle : cloudkit-flowportal-1.0.0-v20160317-RELEASE.war" />
+    <root id="archive" name="cloudkit-flowportal-1.0.0-v20160321-RELEASE.war">
+      <element id="javaee-facet-resources" facet="net.cloudkit.flowportal/web/Web Gradle : cloudkit-flowportal-1.0.0-v20160321-RELEASE.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="net.cloudkit.flowportal" />
@@ -113,7 +113,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal/exploded/cloudkit-flowportal-1.0.0-v20160317-RELEASE.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal/exploded/cloudkit-flowportal-1.0.0-v20160321-RELEASE.war/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>

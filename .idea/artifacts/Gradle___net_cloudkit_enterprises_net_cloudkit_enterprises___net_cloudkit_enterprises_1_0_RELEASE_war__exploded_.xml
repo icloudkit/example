@@ -2,7 +2,7 @@
   <artifact type="exploded-war" name="Gradle : net.cloudkit.enterprises:net.cloudkit.enterprises : net.cloudkit.enterprises-1.0-RELEASE.war (exploded)">
     <output-path>$PROJECT_DIR$/out/artifacts/net.cloudkit.enterprises/exploded/net.cloudkit.enterprises-1.0-RELEASE.war</output-path>
     <properties id="gradle-properties">
-      <options external-project-path="$PROJECT_DIR$/net.cloudkit.enterprises" />
+      <options external-project-path="$PROJECT_DIR$" />
     </properties>
     <root id="root">
       <element id="javaee-facet-resources" facet="net.cloudkit.enterprises/web/Web Gradle : net.cloudkit.enterprises-1.0-RELEASE.war" />

@@ -28,10 +28,12 @@ public class CloudKitEcosystemApplication {
         userRepository.findAll();
         System.out.println("Let's inspect the beans provided by Spring Boot:");
 
+        /*
         String[] beanNames = ctx.getBeanDefinitionNames();
         Arrays.sort(beanNames);
         for (String beanName : beanNames) {
             System.out.println(beanName);
         }
+        */
 	}
 }

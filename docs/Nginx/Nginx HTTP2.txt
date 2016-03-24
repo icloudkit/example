@@ -352,7 +352,7 @@ $ ./configure --with-http_ssl_module \
       --with-stream \
       --with-stream_ssl_module \
       --with-http_v2_module \
-      --with-openssl=../openssl-1.0.2e \
+      --with-openssl=../openssl-1.0.2g \
       --with-pcre=../pcre-8.38 \
       --with-zlib=../zlib-1.2.8 \
 

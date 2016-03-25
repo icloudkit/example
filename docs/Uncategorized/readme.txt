@@ -1325,7 +1325,6 @@ http://seajs.org/
 《最好的告别：关于衰老与死亡，你必须知道的常识》 Being Mortal:Medicine and What Matters in the End
 库切的《青春》
 
-
 http://zh.forvo.com/
 http://www.unicode.org/
 The Pragmatic Programmer
@@ -1347,3 +1346,9 @@ http://www.joelonsoftware.com/
 http://fsharpforfunandprofit.com/fppatterns/
 http://www.inc.com/magazine/20100301/lets-take-this-offline.html
 http://nethack4.org/blog/building-c.html
+
+http://tianchunbinghe.blog.163.com/
+http://www.ruanyifeng.com/blog/2011/06/birth_of_javascript.html
+
+uptime
+http://www.ruanyifeng.com/blog/2011/07/linux_load_average_explained.html

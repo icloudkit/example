@@ -5,7 +5,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="entityManagerFactory" value="8ac36cdb-f674-4493-befe-29f9f0e4c442" />
+        </datasource-mapping>
       </configuration>
     </facet>
     <facet type="JRebel" name="JRebel">

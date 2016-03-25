@@ -1360,11 +1360,11 @@ http://www.ruanyifeng.com/blog/2011/07/linux_load_average_explained.html
 所谓继承是指可以让某个类型的对象获得另一个类型的对象的属性的方法。它支持按级分类的概念。继承是指这样一种能力：它可以使用现有类的所有功能，并在无需重新编写原来的类的情况下对这些功能进行扩展。 通过继承创建的新类称为“子类”或“派生类”，被继承的类称为“基类”、“父类”或“超类”。继承的过程，就是从一般到特殊的过程。要实现继承，可以通过“继承”（Inheritance）和“组合”（Composition）来实现。继承概念的实现方式有二类：实现继承与接口继承。实现继承是指直接使用基类的属性和方法而无需额外编码的能力；接口继承是指仅使用属性和方法的名称、但是子类必须提供实现的能力；
 所谓多态就是指一个类实例的相同方法在不同情形有不同表现形式。多态机制使具有不同内部结构的对象可以共享相同的外部接口。这意味着，虽然针对不同对象的具体操作不同，但通过一个公共的类，它们（那些操作）可以通过相同的方式予以调用。
 
-面向对象五大基本原则
-单一职责原则SRP(Single Responsibility Principle)
+面向对象五大基本原则 设计模式的五大原则
+单一职责原则(Single Responsibility Principle SRP)
 是指一个类的功能要单一，不能包罗万象。如同一个人一样，分配的工作不能太多，否则一天到晚虽然忙忙碌碌的，但效率却高不起来。
 
-开放封闭原则OCP(Open－Close Principle)
+开放封闭原则(Open－Close Principle OCP)
 一个模块在扩展性方面应该是开放的而在更改性方面应该是封闭的。比如：一个网络模块，原来只服务端功能，而现在要加入客户端功能，
 那么应当在不用修改服务端功能代码的前提下，就能够增加客户端功能的实现代码，这要求在设计之初，就应当将服务端和客户端分开，公共部分抽象出来。
 
@@ -1378,3 +1378,121 @@ http://www.ruanyifeng.com/blog/2011/07/linux_load_average_explained.html
 
 接口分离原则(the Interface Segregation Principle ISP)
 模块间要通过抽象接口隔离开，而不是通过具体的类强耦合起来
+
+
+GoF23种设计模式
+1．创建型模式
+前面讲过，社会化的分工越来越细，自然在软件设计方面也是如此，因此对象的创建和对象的使用分开也就成为了必然趋势。因为对象的创建会消耗掉系统的很多资源，所以单独对对象的创建进行研究，从而能够高效地创建对象就是创建型模式要探讨的问题。这里有6个具体的创建型模式可供研究，它们分别是：
+简单工厂模式（Simple Factory）；
+工厂方法模式（Factory Method）；
+抽象工厂模式（Abstract Factory）；
+创建者模式（Builder）；
+原型模式（Prototype）；
+单例模式（Singleton）。
+
+说明：严格来说，简单工厂模式不是GoF总结出来的23种设计模式之一。
+
+2．结构型模式
+在解决了对象的创建问题之后，对象的组成以及对象之间的依赖关系就成了开发人员关注的焦点，因为如何设计对象的结构、继承和依赖关系会影响到后续程序的维护性、代码的健壮性、耦合性等。对象结构的设计很容易体现出设计人员水平的高低，这里有7个具体的结构型模式可供研究，它们分别是：
+外观模式（Facade）；
+适配器模式（Adapter）；
+代理模式（Proxy）；
+装饰模式（Decorator）；
+桥模式（Bridge）；
+组合模式（Composite）；
+享元模式（Flyweight）。
+
+3．行为型模式
+在对象的结构和对象的创建问题都解决了之后，就剩下对象的行为问题了，如果对象的行为设计的好，那么对象的行为就会更清晰，它们之间的协作效率就会提高，这里有11个具体的行为型模式可供研究，它们分别是：
+模板方法模式（Template Method）；
+观察者模式（Observer）；
+状态模式（State）；
+策略模式（Strategy）；
+职责链模式（Chain of Responsibility）；
+命令模式（Command）；
+访问者模式（Visitor）；
+调停者模式（Mediator）；
+备忘录模式（Memento）；
+迭代器模式（Iterator）；
+解释器模式（Interpreter）。
+
+
+/**
+ * PughFail.java
+ * 线程安全的单例模式
+ * http://en.wikipedia.org/wiki/Initialization_on_demand_holder_idiom
+ *
+ * @author hongquanli <hongquanli@qq.com>
+ * @version 1.0 2016/1/15 17:20
+ */
+public class PughFail {
+
+    public static class Something {
+        private Something() {
+            super();
+            System.out.println(this.getClass().getName() + " called");
+            if (System.currentTimeMillis() > 0) {
+                System.out.println("EMULATING INIT FAILURE");
+                throw new RuntimeException("EMULATING INIT FAILURE");
+            }
+        }
+
+        private static class LazyHolder {
+            private static final Something INSTANCE = new Something();
+        }
+
+        public static Something getInstance() {
+            return LazyHolder.INSTANCE;
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("First try");
+        try {
+            Something.getInstance();
+        } catch (Throwable t) {
+            System.out.println(t);
+        }
+
+        System.out.println("Second try");
+        try {
+            Something.getInstance();
+        } catch (Throwable t) {
+            System.out.println(t);
+        }
+    }
+}
+
+
+SOA设计十大原则
+日前国外网站报道介绍了面向服务架构(SOA)的基本原则，提出了公共接口与内部实现要有明确界限等原则。虽然这些原则并不是绝对的真理，但可作为一个应用开发参考。
+
+一、明确的边界
+通过跨越定义明确的边界进行显式消息传递，服务得以彼此交互。有时候，跨越服务边界可能要耗费很大的成本，这要视地理、信任或执行因素而定。边界是指服务的公共接口与其内部专用实现之间的界线。服务的边界通过 WSDL 发布，可能包括说明特定服务之期望的声明。
+
+二、服务共享和合约架构
+服务交互应当只以服务的策略、架构和基于合约的行为为基础。服务的合约通常使用 WSDL 定义，而服务聚合的合约则可以使用 BPEL 定义(进而，对聚合的每个服务使用 WSDL)。服务使用者将依靠服务的合约来调用服务及与服务交互。鉴于这种依赖性，服务合约必须长期保持稳定。在利用 XML 架构 (xsd:any) 和 SOAP 处理模型(可选标头)的可扩展性的同时，合约的设计应尽可能明确。
+
+三、策略驱动
+尽管它往往被认为是最不为人所了解的原则，但对于实现灵活的 Web 服务，它或许是最有力的。单纯依靠 WSDL 无法交流某些业务交互要求。可以使用策略表达式将结构兼容性(交流的内容)与语义兼容性(如何交流消息或者将消息交流给谁)分隔开来。
+
+四、自治
+服务是独立进行部署、版本控制和管理的实体。开发人员应避免对服务边界之间的空间进行假设，因为此空间比边界本身更容易改变。
+
+五、采用可传输的协议格式，而不是API
+通常,服务提供商基于某种传输协议(例如HTTP)提供服务,而服务消费者只能通过另一种不同的协议(比如MQ)通信。因此，也许需要在服务提供商与消费者之间建立一座异步起动同步运行的连接桥梁,超越HTTP和Java Messaging Service消息服务(JMS)等协议.从技术角度讲，Java Messaging Service消息服务(JMS)并不是一种传输协议,而是一组供应商中立(vendor-neutral)的通信APIs。
+
+六、面向文档
+消息被构造为“纯文本的”XML文档(换句话说，数据的格式只对XML有意义)。 消息通常用于传输业务文档，比如购买订单、发票和提单。这种交互类型与同步消息排队系统的兼容性很好，比如MQ Series、MSMQ、JMS、TIBCO、IMS等等。
+
+七、松耦合
+服务之间要求最小的依赖性，只要求它们之间能够相互知晓。
+
+八、符合标准
+当通过Web的服务实现时，最原始的(基本的)面向服务的架构(SOA)的模型仅仅提供了很低程度上的关于可靠性、安全性以及事务管理的标准化机制。第二代的技术条件和框架，如WS-ReliableMessaging规范、 WS-Security规范和WS-Coordination规范 (与WS-AtomicTransaction规范和WS-BusinessActivity规范相联系)，它们试图以工业标准的方式定位存在的缺陷。
+
+九、独立软件供应商
+向SOA的转变正在深刻改变了经济现实。客户们会期待更合理的费用以及不必重新进行投资就能改进业务的能力。因此，独立软件供应商没有选择，只能使自己的业务更加灵活，以期让自己的客户也变得同样灵活。于是，面向服务不仅是简单的在现有的、紧耦合的、复杂的、不灵活的以及非组件化的业务功能上添加基于标准的接口。更重要的是，为了兑现SOA的承诺，独立软件供应商必须改变他们构建、打包、销售、交付、管理和支持自身产品的方式。
+
+十、元数据驱动
+开发元数据本身并不是元数据驱动应用程序的本意。使用元数据来驱动服务在系统边界的传播是一个更为正确的方法。

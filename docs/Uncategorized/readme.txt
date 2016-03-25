@@ -1507,3 +1507,14 @@ SOA设计十大原则
 
 十、元数据驱动
 开发元数据本身并不是元数据驱动应用程序的本意。使用元数据来驱动服务在系统边界的传播是一个更为正确的方法。
+
+
+http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/
+http://www.tianmaying.com/tutorial/content-for-multiple-device
+http://www.tianmaying.com/tutorial/spring-jpa-page-sort
+http://www.tianmaying.com/tutorial/spring-device-detection
+http://www.tianmaying.com/tutorial/deploy-spring-boot-application
+http://www.tianmaying.com/tutorial/spring-boot-overview
+http://luohua.iteye.com/blog/383891
+
+http://www.reactjs.cn/

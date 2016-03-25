@@ -18,6 +18,7 @@
         <option name="ideModuleStorage">
           <map>
             <entry key="com.zeroturnaround.jrebel.intellij.remoting.Remote2ModuleSpecificServerMigrationCompleted" value="true" />
+            <entry key="com.zeroturnaround.jrebel.remoting.ModuleSpecificSingleRemoteServer" value="{&quot;syncEnabled&quot;:&quot;false&quot;,&quot;serverAuthenticationPassword&quot;:&quot;&quot;,&quot;httpBasicAuthenticationUser&quot;:&quot;&quot;,&quot;httpBasicAuthenticationPassword&quot;:&quot;&quot;,&quot;useServerAuthentication&quot;:&quot;false&quot;,&quot;deleteFilesOnServer&quot;:&quot;true&quot;,&quot;useHttpBasicAuthentication&quot;:&quot;false&quot;}" />
           </map>
         </option>
         <option name="manualXML" value="false" />
@@ -58,6 +59,9 @@
           <root url="file://$MODULE_DIR$/src/main/java" />
         </sourceRoots>
       </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration />
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="false">

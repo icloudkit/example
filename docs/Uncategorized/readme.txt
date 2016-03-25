@@ -1324,3 +1324,26 @@ http://seajs.org/
 《时光尽头的恋人》（The Age of Adaline）
 《最好的告别：关于衰老与死亡，你必须知道的常识》 Being Mortal:Medicine and What Matters in the End
 库切的《青春》
+
+
+http://zh.forvo.com/
+http://www.unicode.org/
+The Pragmatic Programmer
+Extreme programming
+Refactoring
+Joel on Software
+OOP之五大原则
+http://www.ituring.com.cn/book/1533
+http://rusty.ozlabs.org/?p=236
+软件随想录
+http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html
+functional programming
+recursive programming
+Structure and Interpretation of Computer Programs
+Lisp
+Skynet
+http://www.paulgraham.com/avg.html
+http://www.joelonsoftware.com/
+http://fsharpforfunandprofit.com/fppatterns/
+http://www.inc.com/magazine/20100301/lets-take-this-offline.html
+http://nethack4.org/blog/building-c.html

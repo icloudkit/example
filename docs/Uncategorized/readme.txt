@@ -1521,3 +1521,6 @@ http://www.reactjs.cn/
 
 
 font-family: "Helvitica Neue",Helvitica,Arial,sans-serif;
+
+https://www.google.com/chrome/browser/desktop/index.html?standalone=1&platform=win64
+http://krasimirtsonev.com/blog/article/javascript-library-starter-using-webpack-es6

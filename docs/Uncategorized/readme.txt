@@ -1539,3 +1539,6 @@ PostgreSQL
 https://github.com/aliyun/ossfs
 
 http://linux.linuxidc.com/
+
+OpenResty
+OpenResty 最佳实践

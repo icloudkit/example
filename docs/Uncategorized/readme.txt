@@ -1548,3 +1548,11 @@ SaltStack技术入门与实战
 https://moonbingbing.gitbooks.io/openresty-best-practices/content/
 
 http://www.oschina.net/news/71684/pythoner-tell-you-why-choose-java?from=20160320
+
+Redis 集群解决方案 Codis
+
+http://macacajs.github.io/macaca/
+http://www.postgresqlstudio.org/
+Kubernetes
+https://www.seafile.com/
+QUnit 进行 JavaScript 单元测试

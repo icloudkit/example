@@ -1542,3 +1542,7 @@ http://linux.linuxidc.com/
 
 OpenResty
 OpenResty 最佳实践
+SaltStack技术入门与实战
+架构探险―从零开始写Java Web框架
+
+https://moonbingbing.gitbooks.io/openresty-best-practices/content/

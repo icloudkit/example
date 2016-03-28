@@ -1546,3 +1546,5 @@ SaltStack技术入门与实战
 架构探险―从零开始写Java Web框架
 
 https://moonbingbing.gitbooks.io/openresty-best-practices/content/
+
+http://www.oschina.net/news/71684/pythoner-tell-you-why-choose-java?from=20160320

@@ -224,3 +224,108 @@ $.ajax({
         alert( "Data Saved: " + msg );
     }
 });
+
+
+
+// 注入脚本
+var url = 'http://libs.useso.com/js/jquery/2.1.1/jquery.min.js';
+// 创建script标签，设置其属性
+var script = document.createElement('script');
+script.setAttribute('src', url);
+// 把script标签加入head，此时调用开始
+document.getElementsByTagName('head')[0].appendChild(script);
+
+console.time('a');
+var arr1 = [];
+for(var i = 1; i <= 724; i++) {
+    var rows = [];
+    $.get('http://mps.szvsc.com/base/NEW_BaseInfoList.do?parm2=BASE_GLOBAL_PORT&set=1459241369032&order_status=null&parm1=' + i, function(data){
+        // alert( "Data: " + data );
+        $(document.body).html('');
+        // $(document).html(data);
+        console.log(rows);
+        arr1.concat(rows);
+        break;
+    });
+}
+console.log(arr1);
+console.timeEnd('a');
+
+var mIframe = document.createElement('iframe');
+mIframe.setAttribute('name', 'mIframe');
+document.getElementsByTagName('body')[0].appendChild(mIframe);
+for(var i = 1; i <= 724; i++) {
+    mIframe.setAttribute('src', "http://mps.szvsc.com/base/NEW_BaseInfoList.do?parm2=BASE_GLOBAL_PORT&set=1459241369032&order_status=null&parm1=" + i);
+    document.mIframe.onload = function() {
+        console.log(document.mIframe.rows);
+    }
+    if(i > 3) {
+        break;
+    }
+}
+// var iframe = document.getElementsByTagName('iframe')[0];
+
+
+function sleep(milliSeconds){
+	var startTime = new Date().getTime();
+	while (new Date().getTime() < startTime + milliSeconds);
+}
+
+var mIframe = document.createElement('iframe');
+mIframe.setAttribute('name', 'mIframe');
+document.getElementsByTagName('body')[0].appendChild(mIframe);
+for(var i = 1; i <= 724; i++) {
+    mIframe.src = 'http://mps.szvsc.com/base/NEW_BaseInfoList.do?parm2=BASE_GLOBAL_PORT&set=1459241369032&order_status=null&parm1=' + i;
+    mIframe.addEventListener("load", function(){
+        console.log(document.mIframe.rows);
+    }, false);
+    // sleep(1000 * 60 * 3);
+}
+
+try {
+    window.data = [];
+    var mIframe = document.createElement('iframe');
+    mIframe.setAttribute('name', 'mIframe');
+    document.getElementsByTagName('body')[0].appendChild(mIframe);
+    mIframe.addEventListener("load", function(){
+        // console.log(document.mIframe.rows);
+        // data.concat(document.mIframe.rows);
+        var rows = document.mIframe.rows;
+        for(var i = 0; i < rows.length; i++) {
+            window.top.data.push(rows[i]);
+        }
+    }, false);
+
+    var j = 1;
+    var interval_id = setInterval(function() {
+        mIframe.src = 'http://mps.szvsc.com/base/NEW_BaseInfoList.do?parm2=BASE_GLOBAL_PORT&set=1459241369032&order_status=null&parm1=' + j;
+        j++;
+        if(j > 724) {
+            clearInterval(interval_id)
+            // console.table(window.top.data);
+
+            var data = window.top.data;
+            var mTable = document.createElement('table');
+            for(var k = 0; k < data.length; k++) {
+                var mTr = document.createElement('tr');
+                for(var h = 0; h < data[k].length; h++) {
+                    var mTd = document.createElement('td');
+                    mTd.innerHTML = data[k][h];
+                    mTr.appendChild(mTd);
+                }
+                mTable.appendChild(mTr);
+            }
+            document.getElementsByTagName('body')[0].appendChild(mTable);
+
+        }
+    }, 2000);
+} catch(e) {
+
+}
+
+
+   /*
+    window.addEventListener("load", function(){
+        console.log(document.mIframe.rows);
+    });
+    */

@@ -1559,3 +1559,7 @@ QUnit 进行 JavaScript 单元测试
 
 http://dbanotes.net/
 番茄工作法
+
+IBM WebSphere MQ
+RabbitMQ、ActiveMQ和ZeroMQ
+ActiveMQ下一代产品为Apollo

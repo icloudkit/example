@@ -40,17 +40,17 @@
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-data-elasticsearch:1.3.2.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-actuator:1.3.2.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-actuator-docs:1.3.2.BUILD-SNAPSHOT" />
-          <element id="library" level="project" name="Gradle: com.h2database:h2:1.4.190" />
-          <element id="library" level="project" name="Gradle: org.hsqldb:hsqldb:2.3.3" />
-          <element id="library" level="project" name="Gradle: org.apache.derby:derby:10.12.1.1" />
-          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.38" />
-          <element id="library" level="project" name="Gradle: org.postgresql:postgresql:9.4.1207.jre7" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter:1.3.2.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-aop:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: com.h2database:h2:1.4.190" />
           <element id="library" level="project" name="Gradle: org.aspectj:aspectjweaver:1.8.8" />
+          <element id="library" level="project" name="Gradle: org.hsqldb:hsqldb:2.3.3" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.apache.derby:derby:10.12.1.1" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context-support:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: mysql:mysql-connector-java:5.1.38" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot:1.3.2.BUILD-SNAPSHOT" />
+          <element id="library" level="project" name="Gradle: org.postgresql:postgresql:9.4.1207.jre7" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-autoconfigure:1.3.2.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:8.0.30" />
           <element id="library" level="project" name="Gradle: org.hibernate:hibernate-validator:5.2.2.Final" />
@@ -81,7 +81,9 @@
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-actuator:1.3.2.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.springframework.boot:spring-boot-starter-logging:1.3.2.BUILD-SNAPSHOT" />
           <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.16" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: javax.validation:validation-api:1.1.0.Final" />
           <element id="library" level="project" name="Gradle: org.jboss.logging:jboss-logging:3.3.0.Final" />
           <element id="library" level="project" name="Gradle: com.fasterxml:classmate:1.1.0" />
@@ -89,12 +91,12 @@
           <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-logging-juli:8.0.30" />
           <element id="library" level="project" name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:8.0.30" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.6.5" />
-          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-messaging:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-tx:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: io.netty:netty-handler:4.1.0.Beta7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk7:2.6.5" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.6.5" />
+          <element id="library" level="project" name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.1.0.Beta7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.6.5" />
           <element id="library" level="project" name="Gradle: io.netty:netty-codec-http:4.1.0.Beta7" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.6.5" />
@@ -124,12 +126,12 @@
           <element id="library" level="project" name="Gradle: io.netty:netty-codec:4.1.0.Beta7" />
           <element id="library" level="project" name="Gradle: io.netty:netty-common:4.1.0.Beta7" />
           <element id="library" level="project" name="Gradle: javax.inject:javax.inject:1" />
-          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Gradle: org.atteo:evo-inflector:1.2.1" />
           <element id="library" level="project" name="Gradle: com.github.fge:jackson-coreutils:1.6" />
           <element id="library" level="project" name="Gradle: com.google.code.findbugs:jsr305:2.0.1" />
           <element id="library" level="project" name="Gradle: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Gradle: org.jboss:jandex:1.1.0.Final" />
+          <element id="library" level="project" name="Gradle: xml-apis:xml-apis:1.0.b2" />
           <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-core:4.10.4" />
           <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-analyzers-common:4.10.4" />
           <element id="library" level="project" name="Gradle: org.apache.lucene:lucene-queries:4.10.4" />
@@ -147,13 +149,11 @@
           <element id="library" level="project" name="Gradle: org.ow2.asm:asm-commons:4.1" />
           <element id="library" level="project" name="Gradle: io.netty:netty-resolver:4.1.0.Beta7" />
           <element id="library" level="project" name="Gradle: com.github.fge:msg-simple:1.1" />
-          <element id="library" level="project" name="Gradle: xml-apis:xml-apis:1.0.b2" />
           <element id="library" level="project" name="Gradle: com.spatial4j:spatial4j:0.4.1" />
           <element id="library" level="project" name="Gradle: com.github.fge:btf:1.2" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.2.5.BUILD-SNAPSHOT/740309b13c239d770dfc0e267f24ca7659f07e8d/spring-ws-core-2.2.5.BUILD-SNAPSHOT.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-support/2.2.5.BUILD-SNAPSHOT/7f5b8452b069dd6854d630ac18dcbd3ad2585a52/spring-ws-support-2.2.5.BUILD-SNAPSHOT.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.2.5.BUILD-SNAPSHOT/777e7aafd41287927dbebd57eebe839e85131276/spring-xml-2.2.5.BUILD-SNAPSHOT.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.1.0.Beta7/2ee897fdf29b55b07122c3aeeb78af40cfb67648/netty-transport-native-epoll-4.1.0.Beta7-linux-x86_64.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.2.5.BUILD-SNAPSHOT/7d8e315eedd7704588ce2877da74cf5290e81ff3/spring-ws-core-2.2.5.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-support/2.2.5.BUILD-SNAPSHOT/fa7eadfa35c0dbaa984f4bdcf4d5642207de57d9/spring-ws-support-2.2.5.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.2.5.BUILD-SNAPSHOT/f7ff3029ad422cb08641060537119cf1cc4781cc/spring-xml-2.2.5.BUILD-SNAPSHOT.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">

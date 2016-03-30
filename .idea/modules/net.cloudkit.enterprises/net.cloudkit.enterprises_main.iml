@@ -9,7 +9,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/../../../net.cloudkit.enterprises/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots />
       </configuration>
     </facet>
   </component>
@@ -43,15 +42,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsian-2.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsianCmaps-2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -62,6 +52,15 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/jbarcode-0.2.8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsian-2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

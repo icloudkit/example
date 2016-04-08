@@ -1563,3 +1563,7 @@ http://dbanotes.net/
 IBM WebSphere MQ
 RabbitMQ、ActiveMQ和ZeroMQ
 ActiveMQ下一代产品为Apollo
+
+
+ThreadLocal保证一个线程一个事务一个session
+http://www.querydsl.com/

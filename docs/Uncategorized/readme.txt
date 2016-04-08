@@ -1611,6 +1611,5 @@ Fedora/OpenSUSE 64-bit Bata 版: https://www.google.com/chrome/browser/beta.html
 Fedora/OpenSUSE 64-bit DEV 版: https://www.google.com/chrome/browser/?platform=linux&extra=devchannel
 Chromium下载地址：http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html
 
-
+------------------------------------------------------------------------------------------------------------------------
 http://fabricjs.com/
-canvasjs

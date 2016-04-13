@@ -92,6 +92,7 @@ ActiveMQ Apollo
 RabbitMQ
 ZeroMQ
 IBM WebSphere MQ
+Apache Qpid
 
 JMS (Java Messaging Service)
 RPC (Remote Procedure Call Protocol)

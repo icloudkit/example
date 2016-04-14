@@ -1628,3 +1628,10 @@ MD5
 Base64
 HASH
 SHA
+
+WBPS
+BIOS
+EBS
+BPS
+
+Wallet

@@ -1614,3 +1614,17 @@ Chromium下载地址：http://commondatastorage.googleapis.com/chromium-browser-
 
 ------------------------------------------------------------------------------------------------------------------------
 http://fabricjs.com/
+
+无线应用通讯协议
+Wireless Application Protocol
+
+WAPI WiFi
+
+SMS4密码算法
+
+AES
+RC4
+MD5
+Base64
+HASH
+SHA

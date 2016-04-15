@@ -11,6 +11,11 @@
         </webroots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="web application context" profiles="development" autodetected="true" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/../../../net.cloudkit.enterprises/build/classes/main" />
@@ -42,15 +47,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/jbarcode-0.2.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsian-2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -60,7 +56,25 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/Filters.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsianCmaps-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/jbarcode-0.2.8.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -79,15 +93,6 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/libsvm.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/Filters.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

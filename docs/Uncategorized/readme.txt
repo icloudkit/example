@@ -1641,3 +1641,16 @@ multipart/form-data
 application/x-www-form-urlencoded
 
 CAP原则
+分布式系统概念与设计 第五版
+连接池
+队列 MQ JMS
+NoSQL
+JSON
+BSON
+JSONB
+
+Spring 2 Portlet MVC 框架构建 Portlet 应用
+JSR-168 Portlet
+
+PostgreSQL
+CitusDB

@@ -1654,3 +1654,69 @@ JSR-168 Portlet
 
 PostgreSQL
 CitusDB
+
+
+
+View Code
+
+
+/**
+ * jQuery Ajax 防止重复提交
+ * @data   : 2012-5-31 17:13
+ */
+
+(function($){
+    var $ajax = $.ajax;
+    $ajax._requestsCache = {};
+    //设置全局 AJAX 默认选项。
+    $.ajaxSetup({
+        mode: "block",
+        index: 0,
+        cache: false,
+        beforeSend: function(xhr, s) {
+            if (s.mode) {
+                if (s.mode === "abort" && s.index) {
+                    if ($ajax._requestsCache[s.index]) {
+                        $ajax._requestsCache[s.index].abort();
+                    }
+                }
+                $ajax._requestsCache[s.index] = xhr;
+            }
+        }
+    });
+
+    //这里我是重写了getJSON方法，当然了，这名字随便你改，别覆盖jQuery本身的就可以了
+
+    $.extend({
+        getJSON: function(url, data, callback, options) {
+            options = $.extend({}, arguments[arguments.length - 1] || {});
+            if (options.mode === "block" && options.index) {
+                if ($ajax._requestsCache[options.index]) {
+                    return false;
+                }
+                $ajax._requestsCache[options.index] = true;
+            }
+            if (options.crossDomain) {
+                options.dataType = "jsonp";
+            }
+            var type = "json";
+            if ($.isFunction(data)) {
+                callback = data;
+                data = null;
+            }
+            options = $.extend({
+                type: "GET",
+                url: url,
+                data: data,
+                success: callback,
+                dataType: "json"
+            }, options);
+            return $.ajax(options);
+        }
+    });
+
+    $(document).ajaxComplete(function(a,b,c){
+        if (c.index) $ajax._requestsCache[c.index] = null;
+    })
+
+})(jQuery);

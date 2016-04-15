@@ -1629,10 +1629,10 @@ Base64
 HASH
 SHA
 
-WBPS
 BIOS
 EBS
-BPS
+EAI
+
 
 Wallet
 

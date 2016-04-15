@@ -267,7 +267,7 @@
         <!-- <property name="persistenceXmlLocation" value="classpath*:/persistence.xml" /> -->
         <!-- <property name="persistenceUnitName" value="persistenceUnit" /> -->
         <!-- 扫描的实体类包,不再需要persistence.xml了-->
-        <property name="packagesToScan" value="net.cloudkit.ecosystem.enterprises.domain.model"/>
+        <property name="packagesToScan" value="net.cloudkit.enterprises.domain.model"/>
         <property name="jpaProperties">
             <!--
             <value>
@@ -310,6 +310,7 @@
                 <prop key="hibernate.connection.autocommit">false</prop>
                 <prop key="hibernate.id.new_generator_mappings">true</prop>
                 <prop key="hibernate.ejb.naming_strategy">org.hibernate.cfg.ImprovedNamingStrategy</prop>
+                <!-- class,hbm -->
                 <prop key="hibernate.ejb.autodetection">class</prop>
                 <prop key="hibernate.generate_statistics">false</prop>
                 <prop key="hibernate.connection.release_mode">auto</prop>
@@ -421,7 +422,7 @@
     <!-- 配置那些类的方法进行事务管理 -->
     <!-- AOP代理设置 -->
     <aop:config proxy-target-class="true">
-        <aop:pointcut id="allManagerMethod" expression="execution(* net.cloudkit.ecosystem.enterprises.application.*.*(..))" />
+        <aop:pointcut id="allManagerMethod" expression="execution(* net.cloudkit.enterprises.application.*.*(..))" />
         <!-- <aop:pointcut id="evictorPointCut" expression="execution(* net.cloudkit.repositories.application.*.*(..))" /> -->
         <!-- <aop:advisor advice-ref="txAdvice" pointcut="execution(* net.cloudkit.repositories.domain.model.*.*(..)))" order="1" /> -->
         <!-- <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" order="1" /> -->
@@ -440,7 +441,7 @@
 
     <!-- Spring data jpa 增加对jpa命名空间的引用,扫描base-package下所有继承于Repository<T,ID>的接口 -->
     <!--  repository-impl-postfix="Impl" -->
-    <jpa:repositories base-package="net.cloudkit.ecosystem.enterprises.domain.model" entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager">
+    <jpa:repositories base-package="net.cloudkit.enterprises.domain.model" entity-manager-factory-ref="entityManagerFactory" transaction-manager-ref="transactionManager">
         <!--
         <exclude-filter type="regex" expression=".*SomeRepository" />
         <include-filter type="regex" expression=".*SomeRepository" />

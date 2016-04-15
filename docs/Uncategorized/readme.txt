@@ -1639,3 +1639,5 @@ Wallet
 
 multipart/form-data
 application/x-www-form-urlencoded
+
+CAP原则

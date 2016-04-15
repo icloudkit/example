@@ -26,6 +26,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 /**
  * http://my.oschina.net/nicsun/blog/95632
+ * http://www.cnblogs.com/SirSmith/p/4996392.html
  *
  * @author hongquanli <hongquanli@qq.com>
  * @version 1.0 2015/12/22 19:02

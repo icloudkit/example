@@ -64,6 +64,7 @@ public class AES256Encryption {
 //          SecretKey secretKey=kg.generateKey();
 //          //获取二进制密钥编码形式
 //          return secretKey.getEncoded();
+
         //为了便于测试，这里我把key写死了，如果大家需要自动生成，可用上面注释掉的代码
         return new byte[]{0x08, 0x08, 0x04, 0x0b, 0x02, 0x0f, 0x0b, 0x0c,
             0x01, 0x03, 0x09, 0x07, 0x0c, 0x03, 0x07, 0x0a, 0x04, 0x0f,

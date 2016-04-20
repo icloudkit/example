@@ -156,9 +156,9 @@
           <element id="library" level="project" name="Gradle: com.github.fge:msg-simple:1.1" />
           <element id="library" level="project" name="Gradle: com.spatial4j:spatial4j:0.4.1" />
           <element id="library" level="project" name="Gradle: com.github.fge:btf:1.2" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.2.5.BUILD-SNAPSHOT/2d6192624e48c77eeb43744171b22d037c826a9e/spring-ws-core-2.2.5.BUILD-SNAPSHOT.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-support/2.2.5.BUILD-SNAPSHOT/6bc42a224a90c4a70582bb86fcfc8d790a1bed85/spring-ws-support-2.2.5.BUILD-SNAPSHOT.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.2.5.BUILD-SNAPSHOT/35fd768c45adcbd5b9e906cf0d781195dbc699f8/spring-xml-2.2.5.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-core/2.2.5.BUILD-SNAPSHOT/9d0fc4a66dc69b9b3f5ff8bbcbd9eefb7528cd9f/spring-ws-core-2.2.5.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-ws-support/2.2.5.BUILD-SNAPSHOT/48ac36a08ac33bc79acc1bc89bc78f788c514cfc/spring-ws-support-2.2.5.BUILD-SNAPSHOT.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.ws/spring-xml/2.2.5.BUILD-SNAPSHOT/cabf12d4d76634a30665dc9fa5796bced34192/spring-xml-2.2.5.BUILD-SNAPSHOT.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">

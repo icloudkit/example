@@ -47,11 +47,14 @@ Cloud
 Grid Computing 网格计算
 Distributed Computation 分布式计算
 
-SaaS
-IaaS
-PaaS
-Caas
-TaaS
+SaaS Software as a Service
+IaaS Infrastructure as a Service
+PaaS Platform as a Service
+Caas Communications as a Service
+TaaS Things as a Service
+MaaS Machine as a Service
+DaaS Device as a Service
+Big Data as a Service
 互联网+
 
 Network of Documents
@@ -59,6 +62,9 @@ Network of Documents
 Internet of Things
 Networks of Things
 WWW是World Wide Web （环球信息网）的缩写，也可以简称为Web
+
+Intranet
+Extranet
 
 MapReduce
 

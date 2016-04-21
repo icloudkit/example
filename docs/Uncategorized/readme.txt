@@ -51,7 +51,14 @@ SaaS
 IaaS
 PaaS
 Caas
+TaaS
 互联网+
+
+Network of Documents
+
+Internet of Things
+Networks of Things
+WWW是World Wide Web （环球信息网）的缩写，也可以简称为Web
 
 MapReduce
 

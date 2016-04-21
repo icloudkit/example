@@ -50,6 +50,7 @@ Distributed Computation 分布式计算
 SaaS
 IaaS
 PaaS
+Caas
 互联网+
 
 MapReduce

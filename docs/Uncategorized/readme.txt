@@ -1560,6 +1560,8 @@ https://www.behance.net/
 http://www.lagou.com/
 http://www.zealer.com/
 https://www.qingcloud.com/
+http://www.dajie.com/
+https://fancy.com/
 
 PostgreSQL
 

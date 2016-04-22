@@ -1331,6 +1331,9 @@ http://www.guoku.com/selected/
 http://dongxi.douban.com/
 http://www.lifevc.com/
 https://fancy.com
+https://thingd.com
+http://www.xuxian.com/
+https://dribbble.com/
 ------------------------------------------------------------------------------------------------------------------------
 /login?redirect_after_login=
 POST /sessions

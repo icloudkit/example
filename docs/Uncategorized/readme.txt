@@ -1331,10 +1331,13 @@ http://www.guoku.com/selected/
 http://dongxi.douban.com/
 http://www.lifevc.com/
 https://fancy.com
+http://cn.shopbop.com/
 https://thingd.com
 http://fab.com/
 http://www.xuxian.com/
 https://dribbble.com/
+http://fab.com/
+http://www.meici.com/
 ------------------------------------------------------------------------------------------------------------------------
 /login?redirect_after_login=
 POST /sessions

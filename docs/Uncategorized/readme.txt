@@ -1566,6 +1566,8 @@ https://www.qingcloud.com/
 http://www.dajie.com/
 https://fancy.com/
 
+http://www.emoi.cn/
+
 PostgreSQL
 
 https://github.com/aliyun/ossfs

@@ -7,6 +7,8 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
+ * implements Comparable<People>
+ *
  * @author hongquanli <hongquanli@qq.com>
  * @version 1.0 2016/3/17 11:15
  */
@@ -68,6 +70,7 @@ public class User extends AbstractEntity {
 
     /** 简介 */
     @Basic
+    // @Column(name = "views", columnDefinition = "bigint default 0")
     @Column(name = "INTRODUCTION")
     private String introduction;
 

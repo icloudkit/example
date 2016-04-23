@@ -1701,6 +1701,7 @@ http://foundation.zurb.com/
 
 Search/Browse/Explore
 
+account, people, person, profile, unlocked
 
 /**
  * jQuery Ajax 防止重复提交

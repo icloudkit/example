@@ -2,7 +2,7 @@ package net.cloudkit.ecosystem.domain.model;
 
 /**
  * An entity, as explained in the DDD book.
- *  
+ *
  */
 public interface Entity<T> {
 

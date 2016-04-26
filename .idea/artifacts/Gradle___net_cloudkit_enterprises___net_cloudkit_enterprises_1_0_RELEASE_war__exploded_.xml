@@ -12,12 +12,12 @@
           <element id="dir-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/build/resources/main" />
           <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/aliyun-sdk-oss-2.1.0.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/barcode4j-2.1.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/iTextAsian-2.1.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/Filters.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/libsvm.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/iTextAsianCmaps-2.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/iTextAsian-2.1.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/jbarcode-0.2.8.jar" />
           <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/jdom-1.1.jar" />
-          <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.enterprises/libs/libsvm.jar" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Gradle: ch.qos.logback:logback-core:1.1.3" />

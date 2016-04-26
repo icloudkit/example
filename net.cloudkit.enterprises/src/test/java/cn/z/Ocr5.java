@@ -516,25 +516,23 @@ public class Ocr5 {
         // String url = "http://reg.keepc.com/getcode/getCode.php";
         // 下载图片
         // CommonUtil.downloadImage(url, clazz);
-        File file = new File("img/" + clazz);
-        if(!file.exists()) {
-            file.mkdirs();
-        }
-        new File("train/" + clazz).mkdirs();
-        new File("result/" + clazz).mkdirs();
+//        File file = new File("img/" + clazz);
+//        if(!file.exists()) {
+//            file.mkdirs();
+//        }
+//        new File("train/" + clazz).mkdirs();
+//        new File("result/" + clazz).mkdirs();
+//
+//        File[] files = file.listFiles();
+//        // 先删除result/ocr目录，开始识别
+//        for (int i = 0; i < files.length; ++i) {
+//            final String text = getAllOcr(files[i], files[i].getName());
+//            System.out.println(i + ".jpg = " + text);
+//        }
 
-        File[] files = file.listFiles();
-        // 先删除result/ocr目录，开始识别
-        for (int i = 0; i < files.length; ++i) {
-            final String text = getAllOcr(files[i], files[i].getName());
-            System.out.println(i + ".jpg = " + text);
-        }
-
-//         CommonUtil.scaleTraindata(clazz, whiteThreshold);
-//         svm_train train = new svm_train();
-//         train.run(new String[] { new File("train/" + clazz +
-//         "/data.txt").getAbsolutePath(),
-//         new File("train/" + clazz + "/data.txt.model").getAbsolutePath() });
+         CommonUtil.scaleTraindata(clazz, whiteThreshold);
+         svm_train train = new svm_train();
+         train.run(new String[] { new File("train/" + clazz + "/data.txt").getAbsolutePath(), new File("train/" + clazz + "/data.txt.model").getAbsolutePath() });
     }
 
 }

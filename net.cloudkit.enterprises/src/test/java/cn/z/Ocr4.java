@@ -1,6 +1,13 @@
 package cn.z;
 
-import java.awt.Color;
+import cn.z.svm.svm_predict;
+import cn.z.util.CommonUtil;
+import cn.z.svm.svm_train;
+import com.jhlabs.image.ScaleFilter;
+import org.apache.commons.io.IOUtils;
+
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,15 +16,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.imageio.ImageIO;
-
-import org.apache.commons.io.IOUtils;
-
-import com.jhlabs.image.ScaleFilter;
-
-import cn.z.svm.svm_predict;
-import cn.z.util.CommonUtil;
 
 public class Ocr4 {
 
@@ -281,20 +279,20 @@ public class Ocr4 {
 		// String url = "http://reg.keepc.com/getcode/getCode.php";
 		// 下载图片
 		// CommonUtil.downloadImage(url, clazz);
-		new File("img/" + clazz).mkdirs();
-		new File("train/" + clazz).mkdirs();
-		new File("result/" + clazz).mkdirs();
-		// 先删除result/ocr目录，开始识别
-		for (int i = 0; i < 30; ++i) {
-			final String text = getAllOcr("img/" + clazz + "/" + i + ".jpg");
-			System.out.println(i + ".jpg = " + text);
-		}
+//		new File("img/" + clazz).mkdirs();
+//		new File("train/" + clazz).mkdirs();
+//		new File("result/" + clazz).mkdirs();
+//		// 先删除result/ocr目录，开始识别
+//		for (int i = 0; i < 30; ++i) {
+//			final String text = getAllOcr("img/" + clazz + "/" + i + ".jpg");
+//			System.out.println(i + ".jpg = " + text);
+//		}
 
-		// CommonUtil.scaleTraindata(clazz, whiteThreshold);
-		// svm_train train = new svm_train();
-		// train.run(new String[] { new File("train/" + clazz +
-		// "/data.txt").getAbsolutePath(),
-		// new File("train/" + clazz + "/data.txt.model").getAbsolutePath() });
+		 CommonUtil.scaleTraindata(clazz, whiteThreshold);
+		 svm_train train = new svm_train();
+		 train.run(new String[] { new File("train/" + clazz +
+		 "/data.txt").getAbsolutePath(),
+		 new File("train/" + clazz + "/data.txt.model").getAbsolutePath() });
 	}
 
 }

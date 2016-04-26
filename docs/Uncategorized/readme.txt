@@ -63,6 +63,9 @@ TaaS Things as a Service
 MaaS Machine as a Service
 DaaS Device as a Service
 Big Data as a Service
+Metal as a Service
+
+MaaS即Mobility as a service，解释为移动即服务
 互联网+
 
 Network of Documents
@@ -1704,6 +1707,9 @@ http://foundation.zurb.com/
 Search/Browse/Explore
 
 account, people, person, profile, unlocked
+
+http://outdatedbrowser.com/en
+http://www.80net.cn/home.html
 
 /**
  * jQuery Ajax 防止重复提交

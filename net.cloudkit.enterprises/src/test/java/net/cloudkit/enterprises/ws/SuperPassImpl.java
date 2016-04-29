@@ -52,13 +52,13 @@ public class SuperPassImpl implements SuperPass {
             } else if (serviceName.equals("eport.superpass.pas.NewClientIdExist")) {
                 installId = TalkClient.getInstallId(random);
                 requestContext = ("<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><RequestContext><Group name=\"SystemInfo\"><Key name=\"IcCode\" /><Key name=\"OperatorName\" /><Key name=\"CertNo\" /></Group><Group name=\"Pas\"><Key name=\"InstallIdEncrypted\">1</Key></Group><Group name=\"DataPresentation\"><Key name=\"EncryptAlgorithm\" /><Key name=\"CompressAlgorithm\" /><Key name=\"SignatureAlgorithm\" /></Group></RequestContext>").getBytes();
-                requestData = ("<?xml version=\"1.0\"?><NewClientIdExistRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.chinaport.gov.cn/PAS\"><NewInstallId>" + TalkClient.getInstallId(random) + "</NewInstallId></NewClientIdExistRequest>").getBytes();
+                requestData = ("<?xml version=\"1.0\"?><NewClientIdExistRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.chinaport.gov.cn/PAS\"><NewInstallId>" + installId + "</NewInstallId></NewClientIdExistRequest>").getBytes();
                 byte[] result = SuperPassImpl.invoke(serviceName, requestContext, requestData, responseData);
 
                 // responseData.value = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><NewClientIdExistResponse xmlns=\"http://www.chinaport.gov.cn/PAS\" xmlns:ns2=\"http://www.chinaport.gov.cn/pas\"><Seq>5300001129778</Seq><ClientType>17</ClientType><CustomsCode>5300</CustomsCode></NewClientIdExistResponse>".getBytes();
-                return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><ResponseContext><ResponseCode>0</ResponseCode><ResponseMessage>success</ResponseMessage><ServiceResponseCode>0</ServiceResponseCode><ServiceResponseMessage>客户端信息已采集</ServiceResponseMessage><ExceptionDetail></ExceptionDetail><Group name=\"DataPresentation\"><Key name=\"CompressAlgorithm\"></Key><Key name=\"SignatureAlgorithm\"></Key><Key name=\"EncryptAlgorithm\"></Key></Group></ResponseContext>".getBytes();
+                // return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><ResponseContext><ResponseCode>0</ResponseCode><ResponseMessage>success</ResponseMessage><ServiceResponseCode>0</ServiceResponseCode><ServiceResponseMessage>客户端信息已采集</ServiceResponseMessage><ExceptionDetail></ExceptionDetail><Group name=\"DataPresentation\"><Key name=\"CompressAlgorithm\"></Key><Key name=\"SignatureAlgorithm\"></Key><Key name=\"EncryptAlgorithm\"></Key></Group></ResponseContext>".getBytes();
 
-                // return result;
+                return result;
 
             } else if (serviceName.equals("eport.superpass.pas.FreeClientTypeCheck")) {
 
@@ -90,7 +90,7 @@ public class SuperPassImpl implements SuperPass {
                 // return "<?xml version=\"1.0\" encoding=\"UTF-8\"?><ResponseContext><ResponseCode>0</ResponseCode><ResponseMessage>success</ResponseMessage><ServiceResponseCode>0</ServiceResponseCode><ServiceResponseMessage>客户端定制权限查询成功</ServiceResponseMessage><ExceptionDetail></ExceptionDetail><Group name=\"DataPresentation\"><Key name=\"CompressAlgorithm\"></Key><Key name=\"SignatureAlgorithm\"></Key><Key name=\"EncryptAlgorithm\"></Key></Group></ResponseContext>".getBytes();
 
                 byte[] result = SuperPassImpl.invoke(serviceName, requestContext, requestData, responseData);
-                requestData = ("<ClientTypeAuthQueryRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.chinaport.gov.cn/PAS\"><InstallId>" + installId + "</InstallId></ClientTypeAuthQueryRequest>").getBytes();
+                // requestData = ("<ClientTypeAuthQueryRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"http://www.chinaport.gov.cn/PAS\"><InstallId>" + installId + "</InstallId></ClientTypeAuthQueryRequest>").getBytes();
 
                 return result;
 

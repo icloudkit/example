@@ -30,6 +30,7 @@ CQRS (Command Query Responsibility Segregation)
 SEDA(Staged Event-Driven Architecture)
 Unit Of Work 模式
 Repository 模式
+AggreateRoot
 
 RESTful
 HATEOAS
@@ -1710,6 +1711,17 @@ account, people, person, profile, unlocked
 
 http://outdatedbrowser.com/en
 http://www.80net.cn/home.html
+
+Fingerprints
+http://www.fingerprints.com/
+http://www.o-film.com/
+AuthenTec
+金雅拓
+http://www.gemalto.com/china/
+http://precisebiometrics.com/
+意法半导体
+
+Xenocode Postbuild
 
 /**
  * jQuery Ajax 防止重复提交

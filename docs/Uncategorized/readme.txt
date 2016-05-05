@@ -1712,6 +1712,7 @@ account, people, person, profile, unlocked
 http://outdatedbrowser.com/en
 http://www.80net.cn/home.html
 
+指纹识别
 Fingerprints
 http://www.fingerprints.com/
 http://www.o-film.com/
@@ -1740,6 +1741,9 @@ https://github.com/waylau/Jersey-2.x-User-Guide
 https://github.com/Dreampie/Resty
 
 Spring MVC
+
+fasterxml jackson
+http://wiki.fasterxml.com/JacksonDownload
 
 H3C小贝系列
 

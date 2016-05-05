@@ -1723,6 +1723,10 @@ http://precisebiometrics.com/
 
 Xenocode Postbuild
 
+依赖倒置（Dependency Inversion Principle）
+控制反转（Inversion of Control） IOC
+依赖注入（Dependency Injection）DI
+
 /**
  * jQuery Ajax 防止重复提交
  * @data   : 2012-5-31 17:13

@@ -1575,6 +1575,7 @@ https://fancy.com/
 http://www.emoi.cn/
 
 PostgreSQL
+MySQL
 
 https://github.com/aliyun/ossfs
 

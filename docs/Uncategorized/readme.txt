@@ -64,7 +64,7 @@ TaaS Things as a Service
 MaaS Machine as a Service
 DaaS Device as a Service
 Big Data as a Service
-Metal as a Service
+MaaS Metal as a Service
 
 MaaS即Mobility as a service，解释为移动即服务
 互联网+
@@ -92,9 +92,6 @@ Raspberry Pi
 
 NoSQL
 Cassandra
-Hadoop
-Docker
-Mesos
 OpenStack
 OpenWrt
 OpenGL
@@ -106,6 +103,10 @@ OpenSSL
 OpenID
 OAuth
 YARN
+
+Hadoop
+Docker
+Mesos
 ZooKeeper
 HBase
 MongoDB
@@ -1276,6 +1277,7 @@ Netflix/Hystrix
 RxJS的异步、LINQ和未来
 
 疯狂动物城
+
 ntpdate -u time.nist.gov
 
 
@@ -1780,6 +1782,21 @@ CGLIB
 MyBatis
 Hibernate
 Quartz
+
+keepalived
+
+Mule
+https://developer.mulesoft.com/
+
+Spring Integration
+
+ZeroMQ
+https://github.com/zeromq/jzmq
+http://zeromq.org/
+
+ZooKeeper
+是一个分布式的，开放源码的分布式应用程序协调服务，是Google的Chubby一个开源的实现，是Hadoop和Hbase的重要组件。
+http://zookeeper.apache.org/
 
 流式大数据处理的三种框架: Storm, Spark和Samza
 http://storm.apache.org/

@@ -1770,6 +1770,18 @@ Google Guava
 http://ifeve.com/google-guava/
 
 Google TensorFlow 人工智能系统
+https://github.com/tensorflow/tensorflow
+
+JDK
+Javasisit
+ASM
+CGLIB
+
+MyBatis
+Hibernate
+
+流式大数据处理的三种框架: Storm, Spark和Samza
+http://storm.apache.org/
 
 泛型的定义主要有以下两种:
 1.在程序编码中一些包含类型参数的类型，也就是说泛型的参数只可以代表类，不能代表个别对象。(这是当今较常见的定义)

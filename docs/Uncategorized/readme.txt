@@ -1779,6 +1779,7 @@ CGLIB
 
 MyBatis
 Hibernate
+Quartz
 
 流式大数据处理的三种框架: Storm, Spark和Samza
 http://storm.apache.org/

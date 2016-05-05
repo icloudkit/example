@@ -1597,18 +1597,18 @@ Kubernetes
 https://www.seafile.com/
 QUnit 进行 JavaScript 单元测试
 
-http://dbanotes.net/
-番茄工作法
 
 IBM WebSphere MQ
 RabbitMQ、ActiveMQ和ZeroMQ
 ActiveMQ下一代产品为Apollo
 
-
-ThreadLocal保证一个线程一个事务一个session
+QueryDSL
 http://www.querydsl.com/
 
+ThreadLocal保证一个线程一个事务一个session
 
+http://dbanotes.net/
+番茄工作法
 ------------------------------------------------------------------------------------------------------------------------
 
 1、Windows 平台 32 位版本：
@@ -1737,16 +1737,6 @@ Xenocode Postbuild
 控制反转（Inversion of Control） IOC
 依赖注入（Dependency Injection）DI
 
-Jersey
-https://jersey.java.net
-https://github.com/waylau/Jersey-2.x-User-Guide
-https://github.com/Dreampie/Resty
-
-Spring MVC
-
-fasterxml jackson
-http://wiki.fasterxml.com/JacksonDownload
-
 H3C小贝系列
 
 归并排序/合并排序
@@ -1768,11 +1758,25 @@ H3C小贝系列
 抽象类的功能要远超过接口，但是，定义抽象类的代价高。因为高级语言来说（从实际设计上来说也是）每个类只能继承一个类。在这个类中，你必须继承或编写出其所有子类的
 所有共性。虽然接口在功能上会弱化许多，但是它只是针对一个动作的描述。而且你可以在一个类中同时实现多个接口。在设计阶段会降低难度的。
 
+泛型的定义主要有以下两种:
+1.在程序编码中一些包含类型参数的类型，也就是说泛型的参数只可以代表类，不能代表个别对象。(这是当今较常见的定义)
+2.在程序编码中一些包含参数的类。其参数可以代表类或对象等等。(现在人们大多把这称作模板)不论使用哪个定义，泛型的参数在真正使用泛型时都必须作出指明。
+一些强类型编程语言支援泛型，其主要目的是加强类型安全及减少类转换的次数，但一些支持泛型的编程语言只能达到部分目的。
+
 Google Guava
 http://ifeve.com/google-guava/
 
 Google TensorFlow 人工智能系统
 https://github.com/tensorflow/tensorflow
+
+Google Guice
+https://github.com/google/guice
+
+Google Gson
+https://github.com/google/gson
+
+JSON-lib
+http://json-lib.sourceforge.net/
 
 JDK
 Javasisit
@@ -1801,10 +1805,21 @@ http://zookeeper.apache.org/
 流式大数据处理的三种框架: Storm, Spark和Samza
 http://storm.apache.org/
 
-泛型的定义主要有以下两种:
-1.在程序编码中一些包含类型参数的类型，也就是说泛型的参数只可以代表类，不能代表个别对象。(这是当今较常见的定义)
-2.在程序编码中一些包含参数的类。其参数可以代表类或对象等等。(现在人们大多把这称作模板)不论使用哪个定义，泛型的参数在真正使用泛型时都必须作出指明。
-一些强类型编程语言支援泛型，其主要目的是加强类型安全及减少类转换的次数，但一些支持泛型的编程语言只能达到部分目的。
+Atomikos 是一款 Java/JTA 事务处理工具。
+https://www.atomikos.com/
+
+Jersey
+https://jersey.java.net
+https://github.com/waylau/Jersey-2.x-User-Guide
+https://github.com/Dreampie/Resty
+
+Spring MVC
+
+fasterxml jackson
+http://wiki.fasterxml.com/JacksonDownload
+
+Nginx
+http://nginx.org/
 
 /**
  * jQuery Ajax 防止重复提交

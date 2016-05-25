@@ -207,7 +207,7 @@ public class SuperPassParaProxyTest {
         // SELECT CODE, NAME FROM mft8_un_locode_port ORDER BY CODE
         // RMFT8ComplexCode
         // SELECT CODE_TS, G_NAME FROM complex ORDER BY CODE_TS
-        byte[] requestData = "<?xml version=\"1.0\"?>\n<LoadIntoMemoryRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n<QuerySql>SELECT CODE, NAME FROM MFT8_ROAD_CURR ORDER BY CODE</QuerySql>\n</LoadIntoMemoryRequest>".getBytes();
+        byte[] requestData = "<?xml version=\"1.0\"?>\n<LoadIntoMemoryRequest xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n<QuerySql>SELECT * FROM DISTRICT ORDER BY DISTRICT_CODE</QuerySql>\n</LoadIntoMemoryRequest>".getBytes();
 
         Holder<byte[]> responseData = new Holder<byte[]>();
         System.out.println(new String(superPass.service(serviceName, requestContext, requestData, responseData)));

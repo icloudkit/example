@@ -87,6 +87,8 @@ dependencies {
             libraries.'javax.servlet-api',
             libraries.'javax.servlet.jsp-api',
             libraries.'javax.servlet.jsp.jstl-api',
+            libraries.'httpclient',
+            libraries.'commons-io'
 
     )
 

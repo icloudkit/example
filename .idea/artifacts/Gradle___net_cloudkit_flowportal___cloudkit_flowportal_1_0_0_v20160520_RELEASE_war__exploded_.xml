@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Gradle : net.cloudkit.flowportal : cloudkit-flowportal-1.0.0-v20160425-RELEASE.war (exploded)">
-    <output-path>$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal/exploded/cloudkit-flowportal-1.0.0-v20160425-RELEASE.war</output-path>
+  <artifact type="exploded-war" name="Gradle : net.cloudkit.flowportal : cloudkit-flowportal-1.0.0-v20160520-RELEASE.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal/exploded/cloudkit-flowportal-1.0.0-v20160520-RELEASE.war</output-path>
     <properties id="gradle-properties">
       <options external-project-path="$PROJECT_DIR$" />
     </properties>
     <root id="root">
-      <element id="javaee-facet-resources" facet="net.cloudkit.flowportal_main/web/Web Gradle : cloudkit-flowportal-1.0.0-v20160425-RELEASE.war" />
+      <element id="javaee-facet-resources" facet="net.cloudkit.flowportal_main/web/Web Gradle : cloudkit-flowportal-1.0.0-v20160520-RELEASE.war" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="net.cloudkit.flowportal_main" />
@@ -110,10 +110,11 @@
           <element id="library" level="project" name="Gradle: org.springframework:spring-beans:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-context:4.2.4.RELEASE" />
           <element id="library" level="project" name="Gradle: org.springframework:spring-expression:4.2.4.RELEASE" />
+          <element id="file-copy" path="$PROJECT_DIR$/net.cloudkit.flowportal/libs/esp-client.jar" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal/exploded/cloudkit-flowportal-1.0.0-v20160425-RELEASE.war/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/net.cloudkit.flowportal/exploded/cloudkit-flowportal-1.0.0-v20160520-RELEASE.war/META-INF/MANIFEST.MF" />
       </element>
     </root>
   </artifact>

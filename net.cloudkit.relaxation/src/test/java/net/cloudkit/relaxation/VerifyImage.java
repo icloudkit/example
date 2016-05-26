@@ -23,6 +23,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.EntityBuilder;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -31,6 +32,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
 import javax.imageio.ImageIO;
@@ -621,14 +623,14 @@ public class VerifyImage {
         System.out.println(vi.getVerifyNumber(ImageIO.read(inputStream)));
         */
 
-        File fileDirectory = new File("D:\\customs\\");
-        File[] files = fileDirectory.isDirectory()?  fileDirectory.listFiles() : new File[0];
-        for (int i = 0; i < files.length; i++) {
-              // convert(files[i], "jpg", "D:\\customs\\" + File.separator + "jpg" + File.separator + files[i].getName().replace(".gif", ".jpg"));
-            InputStream inputStream = new FileInputStream(files[i]);
-            VerifyImage vi = new VerifyImage();
-            System.out.println(vi.getVerifyNumber(ImageIO.read(inputStream), files[i].getName()));
-        }
+//        File fileDirectory = new File("D:\\customs\\");
+//        File[] files = fileDirectory.isDirectory()?  fileDirectory.listFiles() : new File[0];
+//        for (int i = 0; i < files.length; i++) {
+//              // convert(files[i], "jpg", "D:\\customs\\" + File.separator + "jpg" + File.separator + files[i].getName().replace(".gif", ".jpg"));
+//            InputStream inputStream = new FileInputStream(files[i]);
+//            VerifyImage vi = new VerifyImage();
+//            System.out.println(vi.getVerifyNumber(ImageIO.read(inputStream), files[i].getName()));
+//        }
 
         /*
         CloseableHttpClient httpclient = HttpClients.createDefault();
@@ -660,12 +662,39 @@ public class VerifyImage {
         }
         */
 
-        /*
-        HttpPost httpPost = new HttpPost("http://targethost/login");
+
+        CloseableHttpClient httpclient = HttpClients.createDefault();
+        HttpPost httpPost = new HttpPost("http://query.customs.gov.cn/MNFTQ/MRoadQuery.aspx");
+        httpPost.setHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+        httpPost.setHeader("Accept-Encoding", "gzip, deflate, sdch");
+        httpPost.setHeader("Accept-Language", "zh-CN,zh;q=0.8,en;q=0.6");
+        httpPost.setHeader("Cache-Control", "no-cache");
+        httpPost.setHeader("Connection", "keep-alive");
+        httpPost.setHeader("Cookie", "_gscu_1730271708=5923381530olw619; _gscbrs_1730271708=1; ASP.NET_SessionId=ptncdf55itiupef34pvbu045");
+        httpPost.setHeader("Host", "query.customs.gov.cn");
+        httpPost.setHeader("Pragma", "no-cache");
+        httpPost.setHeader("Upgrade-Insecure-Requests", "1");
+        httpPost.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36");
+
         List <NameValuePair> nvps = new ArrayList <NameValuePair>();
-        nvps.add(new BasicNameValuePair("username", "vip"));
-        nvps.add(new BasicNameValuePair("password", "secret"));
-        httpPost.setEntity(new UrlEncodedFormEntity(nvps));
+        nvps.add(new BasicNameValuePair("__VIEWSTATE", "/wEPDwUKMTg2Mjg1MDcxNA9kFgICAw9kFgICAQ9kFgYCBQ8WAh4JaW5uZXJodG1sZWQCCw8PFgIeB0VuYWJsZWRnZGQCDQ88KwALAQAPFggeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AgEeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnQCAWQWAmYPZBYCAgEPZBYYZg8PFgIeBFRleHQFDTUxMDAzMTI0NjIyNDBkZAIBDw8WAh8GBQw3UEg2NTAwMjExMDVkZAICDw8WAh8GBQblh7rlj6NkZAIDDw8WAh8GBQQ1MzAxZGQCBA8PFgIfBgUJ5bey56Gu5oqlZGQCBQ8PFgIfBgURMjAxNi81LzE5IDA6MTg6NTBkZAIGDw8WAh8GBQnlt7LmoLjms6hkZAIHDw8WAh8GBQnlt7LmoLjplIBkZAIIDw8WAh8GBQzmraPluLjnkIbotKdkZAIJDw8WAh8GBQzov5DmirXmraPluLhkZAIKDw8WAh8GBQnlt7LmlL7ooYxkZAILDw8WAh8GBQzmraPluLjnu5PlhbNkZGRfU39vU1WP8iQ82omE82j1AAAAAA=="));
+        nvps.add(new BasicNameValuePair("__EVENTVALIDATION", "/wEWBQLYzrHDDgKIg6eMDAKZl6i5AwLPjaW3BAK63by2BB5caLz4PKI3wfwUFAp9IHkAAAAA"));
+        nvps.add(new BasicNameValuePair("MRoadQueryCtrl1$txtManifestID", "5100312462240"));
+        nvps.add(new BasicNameValuePair("MRoadQueryCtrl1$txtBillNo", "7PH650021105"));
+        nvps.add(new BasicNameValuePair("MRoadQueryCtrl1$txtCode", "387a"));
+        nvps.add(new BasicNameValuePair("select", "中国政府网"));
+        nvps.add(new BasicNameValuePair("select1", "国务院部门网站"));
+        nvps.add(new BasicNameValuePair("select2", "地方政府网站"));
+        nvps.add(new BasicNameValuePair("select3", "驻港澳机构网站"));
+        nvps.add(new BasicNameValuePair("select4", "世界海关组织"));
+        nvps.add(new BasicNameValuePair("select5", "在京直属事业单位"));
+        nvps.add(new BasicNameValuePair("select6", "社会团体"));
+        nvps.add(new BasicNameValuePair("select7", "资讯网"));
+        nvps.add(new BasicNameValuePair("select8", "媒体"));
+
+
+        httpPost.setEntity(new UrlEncodedFormEntity(nvps, "GBK"));
+
         CloseableHttpResponse response2 = httpclient.execute(httpPost);
 
         try {
@@ -673,10 +702,13 @@ public class VerifyImage {
             HttpEntity entity2 = response2.getEntity();
             // do something useful with the response body
             // and ensure it is fully consumed
+            // System.out.println(entity2.getContent());
+            System.out.println("==========================\n" + IOUtils.toString(response2.getEntity().getContent(), "GBK"));
+
             EntityUtils.consume(entity2);
         } finally {
             response2.close();
         }
-        */
+
     }
 }

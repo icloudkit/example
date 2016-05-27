@@ -1822,6 +1822,8 @@ http://wiki.fasterxml.com/JacksonDownload
 Nginx
 http://nginx.org/
 
+Container/ServiceProvider/Facade
+
 /**
  * jQuery Ajax 防止重复提交
  * @data   : 2012-5-31 17:13

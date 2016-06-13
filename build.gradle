@@ -187,11 +187,11 @@ subprojects {
         mavenCentral()
 
         // maven { url 'http://download.java.net/maven/2/' }
-        // maven { url 'http://120.25.65.250:7001/nexus/content/groups/public/' }
-        // jcenter { url "http://jcenter.bintray.com/" }
+        maven { url 'http://120.25.65.250:7001/nexus/content/groups/public/' }
+        jcenter { url "http://jcenter.bintray.com/" }
 
         // maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
-        // maven { url 'http://maven.oschina.net/content/groups/public/' }
+        maven { url 'http://maven.oschina.net/content/groups/public/' }
 
         // 配置Spring Maven仓库
         // maven { url 'http://repo.spring.io/release/' }
@@ -269,7 +269,7 @@ subprojects {
                 libraries.'logback-ext-spring',
 
                 // Guava工程包含了若干被Google的 Java项目广泛依赖 的核心库，例如：集合 [collections] 、缓存 [caching] 、原生类型支持 [primitives support] 、并发库 [concurrency libraries] 、通用注解 [common annotations] 、字符串处理 [string processing] 、I/O 等等。
-                libraries.'guava'
+                // libraries.'guava'
         )
 
         // 依赖mave库中不存在的jar,包含父项目的libs和当前项目的libs下的所有jar

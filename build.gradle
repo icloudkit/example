@@ -184,14 +184,14 @@ subprojects {
         // mavenCentral()别名，表示依赖是从Central Maven 2 仓库中获取。
         // jcenter()别名，表示依赖是从Bintary’s JCenter Maven 仓库中获取。
         // mavenLocal()别名，表示依赖是从本地的Maven仓库中获取。
-        // mavenCentral()
+        mavenCentral()
 
         // maven { url 'http://download.java.net/maven/2/' }
-        // maven { url 'http://10.33.1.216:8081/nexus/content/groups/public/' }
+        // maven { url 'http://120.25.65.250:7001/nexus/content/groups/public/' }
         // jcenter { url "http://jcenter.bintray.com/" }
 
         // maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
-        maven { url 'http://maven.oschina.net/content/groups/public/' }
+        // maven { url 'http://maven.oschina.net/content/groups/public/' }
 
         // 配置Spring Maven仓库
         // maven { url 'http://repo.spring.io/release/' }

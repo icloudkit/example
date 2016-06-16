@@ -30,35 +30,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/aliyun-sdk-oss-2.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/jdom-1.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsianCmaps-2.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module" module-name="net.cloudkit.enterprises_main" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/Filters.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -77,6 +49,34 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsian-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsianCmaps-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/aliyun-sdk-oss-2.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="net.cloudkit.enterprises_main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/Filters.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

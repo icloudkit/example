@@ -47,15 +47,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/aliyun-sdk-oss-2.1.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/jdom-1.1.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -65,7 +56,25 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/barcode4j-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/iTextAsian-2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/aliyun-sdk-oss-2.1.0.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -84,15 +93,6 @@
       <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/jbarcode-0.2.8.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../../net.cloudkit.enterprises/libs/barcode4j-2.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
